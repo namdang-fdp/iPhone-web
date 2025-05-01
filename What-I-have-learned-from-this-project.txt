@@ -1,0 +1,5 @@
+1. Create react app with vite. Visit [https://vite.dev/guide/] for more detail
+--> npm init vite @latest . -- --template react OR npm create vite@latest
+--> npm install
+--> npm run dev
+
