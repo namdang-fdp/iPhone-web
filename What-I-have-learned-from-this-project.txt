@@ -15,6 +15,13 @@ global color change as simple as editing a single line in your config.
 --> Tailwind scans only the classes you actually use (from your defined palette), so unused default colors are omitted entirely, keeping your CSS bundle minimal 
 --> By pruning unused styles at build time, Tailwind’s new engine compiles your trimmed palette significantly faster—up to 5× faster full builds and 100× faster incremental builds
 
+4.!!! [ERROR 1] 
+When @apply a new tailwind config in index.css I have met the error of color class which I config 
+in tailwind.config.js
+--> All the color in the tailwind.config.js must be in the "color: {},"
+--> Try to stop the server and npm run dev after any config to tailwind.
+
+
 
     
 
