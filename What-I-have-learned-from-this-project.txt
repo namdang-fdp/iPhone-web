@@ -3,3 +3,13 @@
 --> npm install
 --> npm run dev
 
+2. Install tailwindcss with Vite. Visit [https://v3.tailwindcss.com/docs/guides/vite] for more detail
+--> npm install -D tailwindcss@3 postcss autoprefixer
+--> npx tailwindcss init -p
+--> Go to tailwind.config.js file and add "./index.html", "./src/**/*.{js,ts,jsx,tsx}", to content.
+--> Add @tailwind base; @tailwind components; @tailwind utilities; to index.css
+
+
+
+    
+
