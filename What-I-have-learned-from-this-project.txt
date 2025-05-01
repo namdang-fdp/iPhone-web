@@ -21,7 +21,21 @@ in tailwind.config.js
 --> All the color in the tailwind.config.js must be in the "color: {},"
 --> Try to stop the server and npm run dev after any config to tailwind.
 
+5. width: 100dvw;
+--> More flexible than 100vw, always fit with the horizontial axis of browser even the scroll is exist/hide.
 
+6. overflow-x: hidden
+--> Hide everything that is overflow of x-axis of <body> tag. Do not allow the horizontial scroll to exist.
 
-    
+7. user-select: none 
+--> Avoid user from choose or bold anything from the <body> text.
+
+8. touch-action: none 
+--> Don't allow the browser to hanlde any action such as zoom, scroll automatically.
+--> All hanlde are design by the Javascript code.
+
+9.  margin-inline-start: auto; margin-inline-end: auto; better than margin: 0 auto for the language which is written from left to right and 
+apply the CSS Logical Properties.
+--> Horizontal centering the element.
+  
 
