@@ -9,6 +9,11 @@
 --> Go to tailwind.config.js file and add "./index.html", "./src/**/*.{js,ts,jsx,tsx}", to content.
 --> Add @tailwind base; @tailwind components; @tailwind utilities; to index.css
 
+3. Config color in tailwind.config.js
+--> Defining all your color tokens in one place guarantees that every component references the same values, making a 
+global color change as simple as editing a single line in your config.
+--> Tailwind scans only the classes you actually use (from your defined palette), so unused default colors are omitted entirely, keeping your CSS bundle minimal 
+--> By pruning unused styles at build time, Tailwind’s new engine compiles your trimmed palette significantly faster—up to 5× faster full builds and 100× faster incremental builds
 
 
     
