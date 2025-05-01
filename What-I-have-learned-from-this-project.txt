@@ -37,5 +37,14 @@ in tailwind.config.js
 9.  margin-inline-start: auto; margin-inline-end: auto; better than margin: 0 auto for the language which is written from left to right and 
 apply the CSS Logical Properties.
 --> Horizontal centering the element.
-  
+
+10. @layer utilities
+--> Custom css class in tailwindcss
+
+11. Create a new file index.js in utils and import all the materials of project instead of
+refer directly from the public folder
+--> Centralized Management
+--> Increase the security
+--> Easy to expand and config
+
 
