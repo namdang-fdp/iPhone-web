@@ -57,3 +57,8 @@ refer directly in component
 --> Enhance SEO
 --> One of the best practices
 
+14. UseGSAP hook to make the component appear more smooth and flexible like animation
+--> npm install gsap @gsap/react
+
+15. Develop the frontend of the web base on the mobile first rules. Make sure the web run
+smoothly on both desktop browser and mobile.
