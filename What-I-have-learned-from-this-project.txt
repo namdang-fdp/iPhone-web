@@ -52,4 +52,8 @@ refer directly in component
 --> Centralized Menagement
 --> DRY (Don't repeat yourself) and Reusability
 
+13. Using both header and nav in the header instead of the single one.
+--> Semantic Clarity and Readability
+--> Enhance SEO
+--> One of the best practices
 
