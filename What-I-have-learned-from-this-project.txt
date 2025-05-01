@@ -47,4 +47,9 @@ refer directly from the public folder
 --> Increase the security
 --> Easy to expand and config
 
+12. Also create a new file index.js in Constants to export all of the products info instead of 
+refer directly in component
+--> Centralized Menagement
+--> DRY (Don't repeat yourself) and Reusability
+
 
