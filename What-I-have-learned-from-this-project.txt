@@ -62,3 +62,14 @@ refer directly in component
 
 15. Develop the frontend of the web base on the mobile first rules. Make sure the web run
 smoothly on both desktop browser and mobile.
+
+16. The real meaning of Hero section - a section which appear first for the user when they 
+login to the web. So that it should be impressive, it may include big-heading, simple description,
+and the CTA button.
+
+17. playsinline
+--> Prevent video from full screen mode
+
+18. Trick to gsap animation
+--> Try to CSS opacity: 0 at the first followed by opacity: 1 and other animation provide by gsap 
+to make the component appear smoothly
