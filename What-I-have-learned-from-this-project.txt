@@ -73,3 +73,16 @@ and the CTA button.
 18. Trick to gsap animation
 --> Try to CSS opacity: 0 at the first followed by opacity: 1 and other animation provide by gsap 
 to make the component appear smoothly
+
+19. Install react-router
+npm install react-router-dom
+
+20. Change the main.jsx and app.jsx to adapt with the react-router
+
+21. Add the pages and routes to implement more page in the FE react router.
+
+22. Install the animated transition by using framer-motion 
+--> npm install framer-motion
+
+23. How to use the lucid-react in react to increase the UI/UX
+--> npm install lucid-react
