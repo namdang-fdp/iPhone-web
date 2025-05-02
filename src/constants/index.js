@@ -7,7 +7,7 @@ import {
     highlightThirdVideo,
     whiteImg,
     yellowImg,
-  } from "../utils";
+	} from "../utils";
   
   export const navLists = ["Store", "Mac", "iPhone", "Support"];
   
@@ -85,3 +85,23 @@ import {
     "Legal",
     "Site Map",
   ];
+
+	export const colorList = [
+		{ id: "titanium", name: "Titanium", hex: "#74726F" },
+    { id: "black", name: "Black Titanium", hex: "#2D2D2D" },
+    { id: "white", name: "White Titanium", hex: "#F5F5F0" },
+    { id: "blue", name: "Blue Titanium", hex: "#394E5C" },
+	]
+
+	export const storageOptions = [
+    { size: "128", price: 999 },
+    { size: "256", price: 1099 },
+    { size: "512", price: 1299 },
+    { size: "1TB", price: 1499 },
+  ]
+
+	export const paymentPlans = [
+    { id: "monthly", name: "Monthly payments", description: "From $45.79/mo. for 24 mo." },
+    { id: "full", name: "Pay in full", description: "From $999" },
+    { id: "carrier", name: "Pay with carrier", description: "From $41.62/mo. for 24 mo." },
+  ]
