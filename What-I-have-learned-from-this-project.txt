@@ -84,5 +84,15 @@ npm install react-router-dom
 22. Install the animated transition by using framer-motion 
 --> npm install framer-motion
 
-23. How to use the lucid-react in react to increase the UI/UX
+23. How to use the lucid-react icon in react to increase the UI/UX
 --> npm install lucid-react
+
+24. motion component
+--> The motion component “supercharges” any HTML or SVG element with animation capabilities at up to 120 fps, 
+outside of React’s render cycle for optimal performance
+
+25. AnimatePresence Wrapper
+--> By default, when React removes a component from the tree it disappears immediately. Wrapping conditional motion children in <AnimatePresence> 
+lets you define exit animations before unmounting
+
+26. How to implement the fake loading animation when transition to another page
