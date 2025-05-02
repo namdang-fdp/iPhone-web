@@ -9,7 +9,7 @@ const Navbar = () => {
 
 				<div className="flex flex-1 justify-center max-sm:hidden">
 					{navLists.map((nav) => (
-						<div className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all">
+						<div className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all" key={nav}>
 							{nav}
 						</div>
 					))}
@@ -19,10 +19,9 @@ const Navbar = () => {
 					<img src={bagImg} alt="bag image" width={18} height={14}/>
 					<img src={searchImg} alt="search image" width={18} height={18}/>
 				</div>
-
 			</nav>
 		</header>
-  )
+	)
 }
 
 export default Navbar

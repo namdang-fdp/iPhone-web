@@ -1,16 +1,7 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Highlights from "./components/Highlights"
+import AppRoutes from "./routes";
 
-function App() {
+const App = () => {
+	return <AppRoutes />;
+};
 
-return (
-    <main className="bg-black">
-			<Navbar />
-			<Hero />
-			<Highlights />
-		</main>
-	)
-}
-
-export default App
+export default App;
