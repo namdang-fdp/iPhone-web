@@ -5,8 +5,10 @@ import { colorList } from '../constants';
 import { storageOptions } from '../constants';
 import { paymentPlans } from '../constants';
 import Navbar from '../components/Navbar';
-const BuyPage = () => {
+import ProductGallery from '../components/ProductGallery';
 
+const BuyPage = () => {
+	const [selectedColor, setSelectedColor] = useState("titanium");
 	const [isLoading, setIsLoading] = useState(true);
 	const [currentStep, setCurrentStep] = useState(1);
 
@@ -36,6 +38,21 @@ const BuyPage = () => {
 									<div className={`h-3 w-3 rounded-full ${currentStep >= 2 ? "bg-blue" : "bg-gray-600"}`}></div>
 									<div className={`h-3 w-3 rounded-full ${currentStep >= 3 ? "bg-blue" : "bg-gray-600"}`}></div>
 								</div>
+							</div>
+
+							<div className="grid md:grid-cols-2 gap-12">
+							<AnimatePresence mode="wait">
+                <motion.div
+                  key={`product-${currentStep}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                  className="sticky top-24"
+                >
+                  <ProductGallery selectedColor={selectedColor} currentStep={currentStep} />
+                </motion.div>
+              </AnimatePresence>
 							</div>
 						</div>
 					</main>
