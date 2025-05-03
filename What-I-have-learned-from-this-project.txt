@@ -96,3 +96,7 @@ outside of React’s render cycle for optimal performance
 lets you define exit animations before unmounting
 
 26. How to implement the fake loading animation when transition to another page
+
+27. How to implement the step button in the buy progress for customer
+
+28. Implement grid container to in UI development
