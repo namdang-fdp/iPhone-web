@@ -105,3 +105,11 @@ import {
     { id: "full", name: "Pay in full", description: "From $999" },
     { id: "carrier", name: "Pay with carrier", description: "From $41.62/mo. for 24 mo." },
   ]
+
+
+  export const baseImages = [
+    `assets/images/titanium.png`,
+    `assets/images/titanium-black.png`,
+    `assets/images/titanium-white.png`,
+    `assets/images/titanium-blue.png`,
+  ]
