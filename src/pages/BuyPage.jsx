@@ -9,6 +9,7 @@ import ProductGallery from '../components/ProductGallery';
 import ColorSelector from '../components/ColorSelector';
 import StorageSelector from '../components/StorageSelector';
 import PaymentPlanSelector from '../components/PaymentPlanSelector';
+import RecommendedAccessories from '../components/RecommendedAccessories';
 
 const BuyPage = () => {
 	const [selectedColor, setSelectedColor] = useState("titanium");
@@ -149,6 +150,60 @@ const BuyPage = () => {
                           >
                             Continue
                             <ChevronRight className="ml-2 h-5 w-5" />
+                          </button>
+                        </div>
+                      </div>
+                    )}
+
+                    {currentStep === 3 && (
+                      <div className="space-y-8">
+                        <div>
+                          <h2 className="text-2xl font-medium mb-6">Recommended Accessories</h2>
+                          <RecommendedAccessories />
+                        </div>
+
+                        <div className="border-t border-zinc-800 pt-6">
+                          <div className="space-y-4 mb-6">
+                            <div className="flex justify-between">
+                              <span className="text-zinc-400">iPhone 15 Pro</span>
+                              <span>${getPrice()}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-zinc-400">Color</span>
+                              <span className="capitalize">{selectedColor}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-zinc-400">Storage</span>
+                              <span>{selectedStorage} GB</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span className="text-zinc-400">Payment</span>
+                              <span>
+                                {selectedPaymentPlan === "monthly" ? `$${getMonthlyPrice()}/mo.` : `$${getPrice()}`}
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-between text-xl font-medium pt-4 border-t border-zinc-800">
+                            <span>Total</span>
+                            <span>
+                              {selectedPaymentPlan === "monthly"
+                                ? `$${getMonthlyPrice()}/mo. for 24 mo.`
+                                : `$${getPrice()}`}
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="pt-8 flex space-x-4">
+                          <button
+                            onClick={handlePrevStep}
+                            className="flex-1 border border-zinc-700 hover:border-zinc-500 text-white py-4 px-6 rounded-full font-medium flex items-center justify-center transition-all"
+                          >
+                            Back
+                          </button>
+                          <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-4 px-6 rounded-full font-medium flex items-center justify-center transition-all">
+                            Add to Bag
+                            <ShoppingCart className="ml-2 h-5 w-5" />
                           </button>
                         </div>
                       </div>
