@@ -50,7 +50,7 @@ export default function ProductGallery({ selectedColor, currentStep }) {
 	const [currentImage, setCurrentImage] = useState(0)
 
   useEffect(() => {
-    setCurrentImage(0)
+    setCurrentImage(1)
   }, [selectedColor])
 
   const images = baseImages
