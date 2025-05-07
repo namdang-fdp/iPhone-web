@@ -28,6 +28,9 @@ import explore1 from "/assets/images/explore1.jpg";
 import explore2 from "/assets/images/explore2.jpg";
 import chip from "/assets/images/chip.jpeg";
 import frame from "/assets/images/frame.png";
+import charger from "/public/assets/images/magsafe-charger.png";
+import airpod from "/public/assets/images/airpod.png";
+import leatherCase from "/public/assets/images/iPhone-leather-case.png";
 
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
@@ -55,3 +58,6 @@ export const explore1Img = explore1;
 export const explore2Img = explore2;
 export const chipImg = chip;
 export const frameImg = frame;
+export const chargerImg = charger;
+export const airpodImg = airpod;
+export const leatherCaseImg = leatherCase;
