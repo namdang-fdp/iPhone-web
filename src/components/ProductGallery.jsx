@@ -47,12 +47,21 @@ function Package(props) {
 }
 
 export default function ProductGallery({ selectedColor, currentStep }) {
-	const [currentImage, setCurrentImage] = useState(0)
+	const [currentImage, setCurrentImage] = useState(selectedColor)
 
   useEffect(() => {
-    setCurrentImage(1)
+    setCurrentImage(selectedColor)
   }, [selectedColor])
 
+  const imageIndexMap = {
+    "titanium": 0,
+    "titanium-black": 1,
+    "titanium-white": 2,
+    "titanium-blue": 3,
+  };
+
+  const idx = imageIndexMap[currentImage] ?? 0;
+  
   const images = baseImages
 
   const nextImage = () => {
@@ -76,7 +85,7 @@ export default function ProductGallery({ selectedColor, currentStep }) {
             className="absolute inset-0 flex items-center justify-center"
           >
             <img
-              src={images[currentImage] || "/placeholder.svg"}
+              src={images[idx] || "/placeholder.svg"}
               alt={`iPhone 15 Pro in ${selectedColor} - view ${currentImage + 1}`}
               className="object-contain max-h-full"
             />
