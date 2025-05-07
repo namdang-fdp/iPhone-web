@@ -119,5 +119,13 @@ appear.
 32. Implement the modern select button for the products. Try to use state to control the rendering
 to enhance the users experience when they use the web.
 
+33. Try to use window.scrollTo({ top: 0, behavior: "smooth" }) to manage the step that customer must do
+instead of create too much pages
+
+34. const idx = imageIndexMap[currentImage] ?? 0;
+Nullist coalescing (??) if currentImage don't exist in imageIndexMap ==> it's default 0
+
+
+
 
 
