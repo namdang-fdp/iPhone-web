@@ -8,12 +8,14 @@ import Navbar from '../components/Navbar';
 import ProductGallery from '../components/ProductGallery';
 import ColorSelector from '../components/ColorSelector';
 import StorageSelector from '../components/StorageSelector';
+import PaymentPlanSelector from '../components/PaymentPlanSelector';
 
 const BuyPage = () => {
 	const [selectedColor, setSelectedColor] = useState("titanium");
 	const [isLoading, setIsLoading] = useState(true);
 	const [currentStep, setCurrentStep] = useState(1);
-  const [selectedStorage, setSelectedStorage] = useState("256")
+  const [selectedStorage, setSelectedStorage] = useState("256");
+  const [selectedPaymentPlan, setSelectedPaymentPlan] = useState("monthly");
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -23,10 +25,25 @@ const BuyPage = () => {
 		return () => clearTimeout(timer);
 	}, [])
 
+  const getPrice = () => {
+    const selectedOption = storageOptions.find((option) => option.size === selectedStorage)
+    return selectedOption ? selectedOption.price : 999
+  }
+
+  const getMonthlyPrice = () => {
+    return (getPrice() / 24).toFixed(2)
+  }
 
   const handleNextStep = () => {
     if (currentStep < 3) {
       setCurrentStep(currentStep + 1)
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
+
+  const handlePrevStep = () => {
+    if (currentStep > 1) {
+      setCurrentStep(currentStep - 1)
       window.scrollTo({ top: 0, behavior: "smooth" })
     }
   }
@@ -106,7 +123,36 @@ const BuyPage = () => {
                       </div>
                     )}
 
+                    {currentStep === 2 && (
+                      <div className="space-y-8">
+                        <div>
+                          <h2 className="text-2xl font-medium mb-6">How would you like to pay?</h2>
+                          <PaymentPlanSelector
+                            plans={paymentPlans}
+                            selectedPlan={selectedPaymentPlan}
+                            setSelectedPlan={setSelectedPaymentPlan}
+                            price={getPrice()}
+                            monthlyPrice={getMonthlyPrice()}
+                          />
+                        </div>
 
+                        <div className="pt-8 flex space-x-4">
+                          <button
+                            onClick={handlePrevStep}
+                            className="flex-1 border border-zinc-700 hover:border-zinc-500 text-white py-4 px-6 rounded-full font-medium flex items-center justify-center transition-all"
+                          >
+                            Back
+                          </button>
+                          <button
+                            onClick={handleNextStep}
+                            className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-4 px-6 rounded-full font-medium flex items-center justify-center transition-all"
+                          >
+                            Continue
+                            <ChevronRight className="ml-2 h-5 w-5" />
+                          </button>
+                        </div>
+                      </div>
+                    )}
                   </motion.div>
                 </AnimatePresence>
               </div>
