@@ -100,3 +100,19 @@ lets you define exit animations before unmounting
 27. How to implement the step button in the buy progress for customer
 
 28. Implement grid container to in UI development
+
+29. Use Framer-motion to implement the animation
+--> AnimatePresence help the element to show off some animation before they are removed from
+DOM tree.
+--> mode='wait' means when the last component is completed it's animation the new component will 
+appear.
+--> <motion.div> a special <div> tag that supply by framer motion to implement the animation to div
+--> Initial: the first anime when the component add to the DOM
+--> animated: the state when the component is appear
+--> exit: the state when the component is removed
+--> transition: the time duration between the state
+
+30. How to implement the smooth transition between the products image
+
+31. Implement the carousel the hanlde the image transition
+
