@@ -60,16 +60,33 @@ export default function ProductGallery({ selectedColor, currentStep }) {
     "titanium-blue": 3,
   };
 
+  const varients = [
+    "titanium",
+    "titanium-black",
+    "titanium-white",
+    "titanium-blue"
+  ];
+
   const idx = imageIndexMap[currentImage] ?? 0;
   
   const images = baseImages
 
   const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length)
+    setCurrentImage((prev) => {
+      const imgCurrentIndex = varients.indexOf(prev);
+      const safeIndex = imgCurrentIndex >= 0 ? imgCurrentIndex : 0;
+      const nextIndex = (safeIndex + 1) % varients.length;
+      return varients[nextIndex];
+    })
   }
 
   const prevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + images.length) % images.length)
+    setCurrentImage((prev) => {
+      const imgCurrentIndex = varients.indexOf(prev);
+      const safeIndex = imgCurrentIndex > 0 ? imgCurrentIndex : 0;
+      const prevIndex = (safeIndex - 1 + varients.length) % varients.length;
+      return varients[prevIndex];
+    })
   }
 
   return (
