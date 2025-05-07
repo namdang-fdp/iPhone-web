@@ -108,7 +108,7 @@ export default function ProductGallery({ selectedColor, currentStep }) {
               key={index}
               onClick={() => setCurrentImage(index)}
               className={`h-2 rounded-full transition-all ${
-                currentImage === index ? "w-8 bg-blue-500" : "w-2 bg-zinc-700"
+                currentImage === index ? "w-8 bg-gray-700" : "w-2 bg-white"
               }`}
             ></button>
           ))}
