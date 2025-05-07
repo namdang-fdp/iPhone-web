@@ -88,9 +88,9 @@ import {
 
 	export const colorList = [
 		{ id: "titanium", name: "Titanium", hex: "#74726F" },
-    { id: "black", name: "Black Titanium", hex: "#2D2D2D" },
-    { id: "white", name: "White Titanium", hex: "#F5F5F0" },
-    { id: "blue", name: "Blue Titanium", hex: "#394E5C" },
+    { id: "titanium-black", name: "Black Titanium", hex: "#2D2D2D" },
+    { id: "titanium-white", name: "White Titanium", hex: "#F5F5F0" },
+    { id: "titanium-blue", name: "Blue Titanium", hex: "#394E5C" },
 	]
 
 	export const storageOptions = [
