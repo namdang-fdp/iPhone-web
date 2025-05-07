@@ -116,3 +116,8 @@ appear.
 
 31. Implement the carousel the hanlde the image transition
 
+32. Implement the modern select button for the products. Try to use state to control the rendering
+to enhance the users experience when they use the web.
+
+
+
