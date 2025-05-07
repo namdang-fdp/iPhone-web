@@ -132,9 +132,9 @@ export default function ProductGallery({ selectedColor, currentStep }) {
           {images.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentImage(index)}
+              onClick={() => setCurrentImage(varients[index])}
               className={`h-2 rounded-full transition-all ${
-                currentImage === index ? "w-8 bg-gray-700" : "w-2 bg-white"
+                imageIndexMap[currentImage] === index ? "w-8 bg-gray-700" : "w-2 bg-white"
               }`}
             ></button>
           ))}
