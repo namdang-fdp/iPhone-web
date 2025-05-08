@@ -125,6 +125,11 @@ instead of create too much pages
 34. const idx = imageIndexMap[currentImage] ?? 0;
 Nullist coalescing (??) if currentImage don't exist in imageIndexMap ==> it's default 0
 
+35. Add stagger properties to gsap when it have more than 2 tag in one animation
+That's make the second one appear a little bit slower as soon as the first one completed it's animation.
+
+
+
 
 
 
