@@ -119,18 +119,18 @@ import {
       id: 1,
       name: "MagSafe Charger",
       price: 39,
-      image: "/public/assets/images/magsafe-charger.png",
+      image: "/assets/images/magsafe-charger.png",
     },
     {
       id: 2,
       name: "AirPods Pro",
       price: 249,
-      image: "/public/assets/images/airpod.png",
+      image: "/assets/images/airpod.png",
     },
     {
       id: 3,
       name: "iPhone 15 Pro Leather Case",
       price: 59,
-      image: "/public/assets/images/iPhone-leather-case.png",
+      image: "/assets/images/iPhone-leather-case.png",
     },
   ]
