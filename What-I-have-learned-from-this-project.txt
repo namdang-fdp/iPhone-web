@@ -128,6 +128,17 @@ Nullist coalescing (??) if currentImage don't exist in imageIndexMap ==> it's de
 35. Add stagger properties to gsap when it have more than 2 tag in one animation
 That's make the second one appear a little bit slower as soon as the first one completed it's animation.
 
+36. Implement the introduction videos of the product smooth and easy controlled by the user include
+the video carousel component.
+
+37. Use useRef() hook to change the object in useRef but do not want react re-render the component
+
+38. Before load any video to the component, make sure all of the metadata of that video is loaded. To avoid
+when user hit play but the video is not ready. Do it by useState
+
+39. How to use the conditional class in JSX and combine it to tailwind to make the different CSS of each element in list
+
+40. preload="auto" to allow the browser to load all of the video information (include metadata) even the user doesn't click play yet.
 
 
 
